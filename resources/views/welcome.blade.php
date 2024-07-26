@@ -58,20 +58,20 @@
 
 <body class="antialiased">
     {{-- navbar --}}
-    <nav class="navbar fixed-top bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary">
         <div class="position-relative w-100">
             <div class="position-absolute top-0 start-0">
-                <img src="image/merah-kiri.png" alt="">
+                <img src="image/merah-kiri.png" alt="" width="500px" height="162px">
                 <div
                     class="bg-light border border-3 border-warning position-absolute top-50 start-50 translate-middle rounded-circle p-3 ">
                     <img src="image/arjuna-logo.png" class="" alt="" width="80px" height="80px">
                 </div>
             </div>
             <div class="w-100">
-                <div class="text-center bg-primary p-3">
+                <div class="text-center p-3" style="background-color: #000275;">
                     <p class="text-white fw-bold fs-4 text-uppercase">wisata, privat trip, tour dan rombongan</p>
                 </div>
-                <div class="p-3 bg-info ">
+                <div class="p-3" style="background-color: #00014e;">
                     <ul class="d-flex justify-content-center align-items-center gap-5 list-group-horizontal text-white">
                         <li class="list-group-item fs-5 fw-semibold">Home</li>
                         <li class="list-group-item fs-5 fw-semibold">Paket Layanan</li>
@@ -83,7 +83,7 @@
                 </div>
             </div>
             <div class="position-absolute top-0 end-0 ">
-                <img src="image/merah-kanan.png" alt="">
+                <img src="image/merah-kanan.png" alt="" width="500px" height="85px">
                 <div class="ps-5 ms-5">
                     <div class="position-absolute top-0 end-0 translate-middle rounded-circle mt-5">
                         <ul
@@ -151,22 +151,28 @@
     <div class="bg-light position-relative">
         <div>
             <img class="position-absolute bottom-0 start-0" src="image/shapepojok.png" alt="">
-            <img class="position-absolute top-50 me-5 pe-5 mb-5 pb-5  end-0" src="image/circlebiru.png" alt="">
-            <img class="position-absolute top-50 start-50" src="image/dot-circle.png" alt="">
+            <img class="position-absolute top-0 pt-5 pe-5 me-5  end-0" src="image/circlebiru.png" alt="">
+            <img class="position-absolute top-0 pt-5 start-50" src="image/dot-circle.png" alt="">
+            <img class="position-absolute top-0 start-50" src="image/kuningatas.png" alt=""
+                style="margin-top: 10rem; margin-left: -10rem;">
+            <img class="position-absolute bottom-0" src="image/kuningbawah.png" alt=""
+                style="margin-left: 30rem; margin-bottom: 5rem;">
+            <img class="position-absolute top-0 pt-5 start-50 " src="image/dag.png" alt=""
+                style="margin-left: -20rem">
         </div>
         <div class="container text-center " style="height: 100vh">
             <div class="h-100 d-flex align-items-center justify-content-center">
-                <div class="col text-start">
-                    <div class="h-50 w-50 d-flex align-items-start justify-content-start gap-3 text-danger">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
-                            viewBox="0 0 24 24">
+                <div class="col text-start" style="margin-top: -20rem">
+                    <div class="h-50 w-50 d-flex align-items-start justify-content-start gap-3 text-danger ">
+                        <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                            height="24" viewBox="0 0 24 24">
                             <path
                                 d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
                             </path>
                         </svg>
-                        <p class="fw-bold ">WE'RE THE BEST</p>
+                        <p class="fw-bold fs-3">WE'RE THE BEST</p>
                     </div>
-                    <h1 class="fw-bolder">ARJUNA TRANSPORT</h1>
+                    <h1 class="fw-bolder " style="font-size: 56px">ARJUNA TRANSPORT</h1>
                     <P class="fs-5">Wisata, Privat, Tour, dan Rombongan</P>
                     <div class="mt-5">
                         <button type="button" class="btn btn-success p-3">
@@ -191,7 +197,7 @@
                             <span class="fw-semibold px-1">Hubungi kami</span></button>
                     </div>
                 </div>
-                <div class="col max-vh-100">
+                <div class="col">
                     <img class="img-fluid" src="image/Frame-5.png" alt="">
                 </div>
             </div>
@@ -199,7 +205,10 @@
     </div>
 
     {{-- Layanan --}}
-    <div class="container text-center" style="height: 100vh">
+    <div class="container text-center position-relative" style="height: 100vh">
+        <div class="position-absolute top-0 start-0 z-n1">
+            <img src="image/about-shape.png" alt="" style="margin-top: 200px">
+        </div>
         <div class="row h-100 d-flex align-items-center justify-content-center gap-5">
             <div class="col">
                 <div class="row">
@@ -328,25 +337,49 @@
             </div>
         </div>
 
-        <div class="container text-center mt-5">
-            <div class="row row-cols-3 mt-5">
-                <div class="col">
-                    <img class="m-5" src="image/Vector1.png" width="374.5px" height="328px" alt="">
+        <div class="container text-center my-5 py-5">
+            <div class="row row-cols-3 mt-5 g-5">
+                <div class="col position-relative ">
+                    <div class="position-absolute top-0 start-50 translate-middle bg-light py-3  w-75">
+                        <p class="text-uppercase">34-31 Desember 2026</p>
+                        <p class="fw-bold">"WE GO TO DIENG"</p>
+                    </div>
+                    <img src="image/Vector1.png" width="374.5px" height="328px" alt="">
                 </div>
-                <div class="col">
-                    <img class="m-5" src="image/Vector2.png" width="374.5px" height="328px" alt="">
+                <div class="col position-relative">
+                    <div class="position-absolute top-0 start-50 translate-middle bg-light py-3  w-75">
+                        <p class="text-uppercase">34-31 Desember 2026</p>
+                        <p class="fw-bold">"WE GO TO DIENG"</p>
+                    </div>
+                    <img src="image/Vector2.png" width="374.5px" height="328px" alt="">
                 </div>
-                <div class="col">
-                    <img class="m-5" src="image/Vector3.png" width="374.5px" height="328px" alt="">
+                <div class="col position-relative">
+                    <div class="position-absolute top-0 start-50 translate-middle bg-light py-3  w-75">
+                        <p class="text-uppercase">34-31 Desember 2026</p>
+                        <p class="fw-bold">"WE GO TO DIENG"</p>
+                    </div>
+                    <img src="image/Vector3.png" width="374.5px" height="328px" alt="">
                 </div>
-                <div class="col">
-                    <img class="m-5" src="image/Vector1.png" width="374.5px" height="328px" alt="">
+                <div class="col position-relative">
+                    <div class="position-absolute top-0 start-50 translate-middle bg-light py-3  w-75">
+                        <p class="text-uppercase">34-31 Desember 2026</p>
+                        <p class="fw-bold">"WE GO TO DIENG"</p>
+                    </div>
+                    <img src="image/Vector1.png" width="374.5px" height="328px" alt="">
                 </div>
-                <div class="col">
-                    <img class="m-5" src="image/Vector2.png" width="374.5px" height="328px" alt="">
+                <div class="col position-relative">
+                    <div class="position-absolute top-0 start-50 translate-middle bg-light py-3  w-75">
+                        <p class="text-uppercase">34-31 Desember 2026</p>
+                        <p class="fw-bold">"WE GO TO DIENG"</p>
+                    </div>
+                    <img src="image/Vector2.png" width="374.5px" height="328px" alt="">
                 </div>
-                <div class="col">
-                    <img class="m-5" src="image/Vector3.png" width="374.5px" height="328px" alt="">
+                <div class="col position-relative">
+                    <div class="position-absolute top-0 start-50 translate-middle bg-light py-3  w-75">
+                        <p class="text-uppercase">34-31 Desember 2026</p>
+                        <p class="fw-bold">"WE GO TO DIENG"</p>
+                    </div>
+                    <img src="image/Vector3.png" width="374.5px" height="328px" alt="">
                 </div>
             </div>
         </div>
@@ -447,6 +480,7 @@
     </div>
 
 
+    <!-- Youtube -->
     <div class="container-fluid text-center">
         <div class="row row-cols-3 my-5 ">
             <div class="col my-5">
@@ -469,16 +503,22 @@
             </div>
         </div>
         <nav aria-label="Page navigation example mt-5 mb-5">
-            <ul class="pagination justify-content-center gap-3">
-                <li class="page-item disabled">
-                    <a class="page-link">&lt;</a>
+            <ul class="pagination justify-content-center gap-3 ">
+                <li class="page-item ">
+                    <a class="page-link text-black  badge p-3" href="#"
+                        style="background-color: #cccccc;">&lt;</a>
                 </li>
-                <li class="page-item "><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">...</a></li>
-                <li class="page-item"><a class="page-link" href="#">1337</a></li>
+                <li class="page-item "><a class="page-link  badge p-3" href="#"
+                        style="background-color: #00bb6d;">1</a></li>
+                <li class="page-item"><a class="page-link text-black badge p-3" href="#"
+                        style="background-color: #cccccc;">2</a></li>
+                <li class="page-item"><a class="page-link text-black badge p-3" href="#"
+                        style="background-color: #cccccc;">...</a></li>
+                <li class="page-item"><a class="page-link text-black badge p-3" href="#"
+                        style="background-color: #cccccc;">1337</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#">&gt;</a>
+                    <a class="page-link text-black badge p-3" href="#"
+                        style="background-color: #cccccc;">&gt;</a>
                 </li>
             </ul>
         </nav>
