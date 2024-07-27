@@ -1,0 +1,183 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%;  */
+    height: 100vh;
+    background: linear-gradient(
+        to top right,
+        rgba(234, 97, 97, 0.2),
+        rgba(139, 80, 232, 0.3)
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+}
+.motif {
+    width: 200px;
+    height: auto;
+}
+
+.motif1 {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+}
+
+.garis {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 480px;
+}
+
+.polygon {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 508px;
+    left: 730px;
+}
+
+.user-login {
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    width: 70%;
+    z-index: 1;
+}
+
+.bg-card {
+    background-image: url("/assets/img/bgcard.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 75px;
+}
+
+.icn-logo {
+    width: 70px;
+    height: auto;
+    display: block;
+    /* padding-top: 5px; */
+    margin-left: 190px;
+}
+
+.icn-mobil {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: 40px;
+}
+
+h1 b {
+    color: #4361ee;
+}
+
+p {
+    color: #888ea8;
+}
+
+.btn-gradient {
+    background: linear-gradient(to right, #ef1262, #4361ee);
+}
+
+.custom-text-color {
+    color: #888ea8;
+}
+
+.input-group .form-control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+}
+.input-group .input-group-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: white;
+}
+.input-group .input-group-text img {
+    margin-bottom: 0;
+}
+
+.card.user-login {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    margin-top: -75px;
+}
+
+.mediasosial {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.mediasosial .icon-circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ef1262, #4361ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.or {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.or::before {
+    content: "";
+    display: block;
+    border-top: 2px solid #e0e6ed;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.or img {
+    position: relative;
+    z-index: 2;
+    background: white;
+    padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+    .gradient {
+        height: auto;
+    }
+
+    .garis {
+        display: none;
+    }
+
+    .polygon {
+        display: none;
+    }
+}
