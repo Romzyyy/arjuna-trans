@@ -66,7 +66,7 @@
 
 <body class="antialiased">
     {{-- navbar --}}
-    {{-- <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary">
         <div class="position-relative w-100">
             <div class="position-absolute top-0 start-0">
                 <img src="image/merah-kiri.png" alt="" width="500px" height="162px">
@@ -153,7 +153,7 @@
             </div>
         </div>
 
-    </nav> --}}
+    </nav>
 
     {{-- Banner --}}
     <div class="bg-light position-relative">
@@ -232,8 +232,8 @@
             </div>
             <div class="col text-start mt-2">
                 <div class="d-flex align-items-start justify-content-start gap-3 text-danger">
-                    <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
-                        viewBox="0 0 24 24">
+                    <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                        height="24" viewBox="0 0 24 24">
                         <path
                             d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z">
                         </path>
