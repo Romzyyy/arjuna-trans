@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ asset('assets/icons/arjuna-trans.png') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"> --}}
     <title>Arjuna - Trans || Login</title>
 </head>
 <body>
@@ -32,17 +32,16 @@
 
                             <div class="d-flex justify-content-end">
                                 <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Id
+                                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        🇮🇩 Id
                                     </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <li><a class="dropdown-item" href="#">Amerika Serikat</a></li>
-                                        <li><a class="dropdown-item" href="#">Inggris</a></li>
-                                        <li><a class="dropdown-item" href="#">Australia</a></li>
-                                        <li><a class="dropdown-item" href="#">India</a></li>
-                                        <li><a class="dropdown-item" href="#">Indonesia</a></li>
-                                        <li><a class="dropdown-item" href="#">China</a></li>
-                                        <li><a class="dropdown-item" href="#">Jepang</a></li>
+                                    <ul class="dropdown-menu p-0 m-0" aria-labelledby="dropdownMenuButton">
+                                        <li><a class="dropdown-item" href="#">🇺🇸 As</a></li>
+                                        <li><a class="dropdown-item" href="#">🇬🇧 Eng</a></li>
+                                        <li><a class="dropdown-item" href="#">🇦🇺 Aus</a></li>
+                                        <li><a class="dropdown-item" href="#">🇮🇳 Ida</a></li>
+                                        <li><a class="dropdown-item" href="#">🇨🇳 Chi</a></li>
+                                        <li><a class="dropdown-item" href="#">🇯🇵 Jpn</a></li>
                                         <!-- Tambahkan lebih banyak negara sesuai kebutuhan -->
                                     </ul>
                                 </div>
