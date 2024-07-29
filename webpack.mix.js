@@ -19,3 +19,7 @@ mix.js("resources/js/app.js", "public/js").postCss(
     ]
 );
 mix.sass("resources/sass/app.scss", "public/css");
+
+mix.autoload({
+    jquery: ['$', 'window.jQuery', 'jQuery'],
+});
