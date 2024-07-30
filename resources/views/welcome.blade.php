@@ -7,7 +7,7 @@
     <title>Arjuna - Trans</title>
     <link rel="icon" href="{{ asset('assets/icons/arjuna-trans.png') }}">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <!-- ========== End Stylesheet ========== -->
 </head>
 
