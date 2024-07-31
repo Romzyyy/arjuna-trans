@@ -37,6 +37,9 @@
             @yield('navcontent')
         </div>
     </div>
+    <footer class="text-center mt-4">
+        <p>Copyright © 2023 CV. Arjuna Sakti Sekuti</p>
+    </footer>
 </body>
 
 </html>
