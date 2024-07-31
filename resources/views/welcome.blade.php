@@ -1,17 +1,62 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arjuna - Trans</title>
-    <link rel="icon" href="{{ asset('assets/icons/arjuna-trans.png') }}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <!-- ========== End Stylesheet ========== -->
+@extends('layouts.main')
 </head>
 
 <body class="antialiased">
+    <div class="navbar-wrapper position-relative">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e3799">
+            <div class="container position-relative" style="z-index: 2">
+                <div class="navbar-text text-white fw-bold text-center flex-grow-1">
+                    WISATA, PRIVAT TRIP, TOUR DAN ROMBONGAN
+                </div>
+                <div class="d-flex align-items-center social-icons">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Paket Layanan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Jadwal Trip</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Short Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tentang Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-success rounded-pill contact-btn">
+                    <i class="fab fa-whatsapp me-2"></i>Hubungi Kami
+                </a>
+            </div>
+        </nav>
+
+        <a class="navbar-brand position-absolute top-50 translate-middle-y" href="#"
+            style="z-index: 3; left: 15px">
+            <img src="image/arjuna-logo.png" alt="Logo" width="80" height="80"
+                class="d-inline-block align-text-top" />
+        </a>
+    </div>
 
     <section class="hero-section">
         <div class="hero-shape hero-shape-1 d-none d-md-block"></div>
@@ -21,14 +66,32 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <small class="text-muted">WE'RE THE BEST</small>
+                    <p class="text-danger fs-5 fw-semibold">WE'RE THE BEST</p>
                     <h1 class="display-4 fw-bold mb-3">ARJUNA TRANSPORT</h1>
-                    <p class="lead mb-4">
+                    <p class="lead mb-4 fw-medium">
                         Wisata, Privat Trip, Tour dan Rombongan
                     </p>
-                    <a href="https://wa.me/your_number" class="btn btn-success btn-lg">
-                        <i class="fab fa-whatsapp me-2"></i>Hubungi Kami
-                    </a>
+                    <button type="button" class="btn btn-success p-3 mt-3 mt-lg-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24"
+                            viewBox="0 0 48 48">
+                            <path fill="#fff"
+                                d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                            </path>
+                            <path fill="#fff"
+                                d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                            </path>
+                            <path fill="#cfd8dc"
+                                d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                            </path>
+                            <path fill="#40c351"
+                                d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                            </path>
+                            <path fill="#fff" fill-rule="evenodd"
+                                d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="fw-semibold px-1">Hubungi kami</span>
+                    </button>
                 </div>
                 <div class="col-lg-6 hero-image">
                     <img src="image/Frame-5.png" alt="Arjuna Transport Buses" class="img-fluid" />
@@ -76,16 +139,35 @@
                             <div class="border rounded p-4">
                                 <h5>Anda ingin paket lainnya?</h5>
                                 <p>Kami sudah siapkan!</p>
-                                <a href="https://wa.me/your_number" class="btn btn-success">
-                                    <i class="fab fa-whatsapp me-2"></i>Hubungi kami
-                                </a>
+                                <button type="button" class="btn btn-success p-3 mt-3 mt-lg-5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                                        height="24" viewBox="0 0 48 48">
+                                        <path fill="#fff"
+                                            d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                                        </path>
+                                        <path fill="#cfd8dc"
+                                            d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                                        </path>
+                                        <path fill="#40c351"
+                                            d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                                        </path>
+                                        <path fill="#fff" fill-rule="evenodd"
+                                            d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="fw-semibold px-1">Hubungi kami</span>
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="mb-4">
                                 <div class="d-flex align-items-center">
                                     <div class="bg-secondary rounded p-3 me-3">
-                                        <img src="image/image9.png" width="50" height="50" alt="Customer Icon" />
+                                        <img src="image/image9.png" width="50" height="50"
+                                            alt="Customer Icon" />
                                     </div>
                                     <div>
                                         <h3 class="fw-bold mb-0">1959+</h3>
@@ -96,7 +178,8 @@
                             <div>
                                 <div class="d-flex align-items-center">
                                     <div class="bg-secondary rounded p-3 me-3">
-                                        <img src="image/image10.png" width="50" height="50" alt="Service Icon" />
+                                        <img src="image/image10.png" width="50" height="50"
+                                            alt="Service Icon" />
                                     </div>
                                     <div>
                                         <h3 class="fw-bold mb-0">100%</h3>

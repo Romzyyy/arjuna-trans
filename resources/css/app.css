@@ -1,4 +1,8 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+@import "~@fortawesome/fontawesome-free/css/fontawesome";
+@import "~@fortawesome/fontawesome-free/css/regular";
+@import "~@fortawesome/fontawesome-free/css/solid";
+@import "~@fortawesome/fontawesome-free/css/brands";
 
 html,
 body {
@@ -11,6 +15,75 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+}
+
+.navbar-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.navbar-wrapper::before,
+.navbar-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.navbar-wrapper::before {
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background: url("../../public/image/merah-kiri.png") right center/auto 100%
+        no-repeat;
+}
+.navbar-wrapper::after {
+    height: 55px;
+    right: 0;
+    width: 25%;
+    background: url("../../public/image/merah-kanan.png") left center/cover
+        no-repeat;
+}
+.container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.navbar-brand {
+    left: 15px;
+}
+.social-icons {
+    margin-right: -150px;
+}
+.contact-btn {
+    margin-right: -150px;
+}
+
+.sidebar {
+    background-color: #6c5ce7;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+}
+.sidebar .nav-link {
+    color: white;
+    padding: 10px 20px;
+}
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.main-content {
+    padding: 20px;
+}
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .gradient {
@@ -30,6 +103,20 @@ body {
     background-position: center;
     z-index: 10;
 }
+
+.sidebar {
+    background-color: #6c5ce7;
+    min-height: 100vh;
+}
+
+.sidebar .nav-link {
+    color: white;
+}
+
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .motif {
     width: 200px;
     height: auto;
