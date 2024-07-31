@@ -3,5 +3,5 @@ import 'bootstrap';
 
 
 $(document).ready(function() {
-    console.log("jQuery dan Bootstrap sudah siap!");
+    // console.log("jQuery dan Bootstrap sudah siap!");
 });

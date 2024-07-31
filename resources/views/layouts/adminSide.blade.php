@@ -5,7 +5,11 @@
         <div class="row">
             <!-- Sidebar -->
             <div class="col-md-2 sidebar">
-                <h3 class="mb-4 text-center">Arjuna Trans</h3>
+                <h3 class="mb-4 text-center">
+                    <img src="{{ asset('assets/icons/arjuna-trans1.png') }}" class="img-fluid w-25">
+                    Arjuna Trans
+                </h3>
+                
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a href="/admin" class="nav-link "><i class="fas fa-home me-2"></i>Dashboard</a>
