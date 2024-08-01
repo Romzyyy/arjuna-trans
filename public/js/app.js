@@ -3025,7 +3025,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
-
+  // console.log("jQuery dan Bootstrap sudah siap!");
 });
 
 /***/ }),

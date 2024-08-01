@@ -8,7 +8,7 @@ class Homepage extends Controller
 {
     public function Homepage()
     {
-        return view("dashboard");
+        return view("welcome");
     }
 }
 ?>

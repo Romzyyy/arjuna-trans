@@ -9,20 +9,21 @@
                     <img src="{{ asset('assets/icons/arjuna-trans1.png') }}" class="img-fluid w-25">
                     Arjuna Trans
                 </h3>
-                
+
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a href="/admin" class="nav-link "><i class="fas fa-home me-2"></i>Dashboard</a>
+                        <a href="/admin" class="nav-link {{ Request::is('/admin') ? 'active' : '' }}"><i
+                                class="fas fa-home me-2"></i>Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/paket" class="nav-link"><i class="fas fa-box me-2"></i>Paket Layanan</a>
+                        <a href="/paket-layanan" class="nav-link"><i class="fas fa-box me-2"></i>Paket Layanan</a>
                     </li>
                     <li class="nav-item">
                         <a href="/jadwal" class="nav-link"><i class="fas fa-calendar me-2"></i>Jadwal
                             Trip</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/video" class="nav-link"><i class="fas fa-video me-2"></i>Short Video</a>
+                        <a href="/short-video" class="nav-link"><i class="fas fa-video me-2"></i>Short Video</a>
                     </li>
                     <li class="nav-item">
                         <a href="/testimoni" class="nav-link"><i class="fas fa-comment me-2"></i>Testimoni</a>

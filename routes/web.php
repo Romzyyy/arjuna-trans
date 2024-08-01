@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Homepage;
 use App\Http\Controllers\Login;
+use App\Http\Controllers\Admin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,26 +16,36 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [Homepage::class, 'Homepage']);
 
 Route::get('/login', [Login::class, 'LoginTrans']);
 
-Route::get('/dashboard', [Homepage::class, 'Homepage']);
+Route::get('/admin', [Admin::class, 'Admin']);
 
-Route::get('/testimoni', function () {
-    return view('testimoni');
-});
+Route::get('/testimoni', [Admin::class, 'Testimoni']);
 
-Route::get('/jadwal', function () {
-    return view('jadwal');
-});
+Route::get('/jadwal', [Admin::class, 'jadwal']);
 
-Route::get('/layanan', function () {
-    return view('layanan');
-});
+Route::get('/paket-layanan', [Admin::class, 'Layanan']);
 
-Route::get('/short', function () {
-    return view('short');
-});
+Route::get('/short-video', [Admin::class, 'ShortVideo']);
+
+Route::get('/pengaturan', [Admin::class, 'pengaturan']);
+
+Route::get('/pengaturan-home', [Admin::class, 'pengaturanHome']);
+
+Route::get('/pengaturan-paket-layanan', [
+    Admin::class,
+    'pengaturanPaketLayanan',
+]);
+
+Route::get('/pengaturan-jadwal-trips', [Admin::class, 'pengaturanJadwalTrips']);
+
+Route::get('/pengaturan-short-video', [Admin::class, 'pengaturanShortVideo']);
+
+Route::get('/pengaturan-testimonials', [
+    Admin::class,
+    'pengaturanTestimonials',
+]);
+
+Route::get('/pengaturan-tentang-kami', [Admin::class, 'pengaturanTentangKami']);
