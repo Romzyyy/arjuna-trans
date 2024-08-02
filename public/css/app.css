@@ -25435,6 +25435,15 @@ p {
         height: 35px;
     }
 }
+
+@media (max-width: 767.98px) {
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+    .form-message {
+        margin-top: 1rem;
+    }
+}
 .video-thumbnail {
     max-width: 100%;
     height: 0;
@@ -25464,3 +25473,10 @@ p {
     }
 }
 
+.bg-layanan{
+    background-color: #007BFF;
+}
+
+.bg-trip{
+    background-color: #7F9AC9;
+}

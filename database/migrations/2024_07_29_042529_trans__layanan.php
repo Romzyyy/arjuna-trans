@@ -15,9 +15,9 @@ class TransLayanan extends Migration
     {
         Schema::create('Trans_Layanan', function(Blueprint $layanan){
             $layanan->id();
-            $layanan->string('judul');
-            $layanan->string('keterangan');
-            $layanan->string('no_wa', 12);
+            $layanan->string('nama_layanan');
+            $layanan->string('gambar');
+            $layanan->text('keterangan');
         });
     }
 

@@ -9,6 +9,7 @@
                     <img src="{{ asset('assets/icons/arjuna-trans1.png') }}" class="img-fluid w-25">
                     Arjuna Trans
                 </h3>
+                <hr>
 
                 <ul class="nav flex-column">
                     <li class="nav-item">

@@ -556,3 +556,11 @@ p {
         padding-right: 15px;
     }
 }
+
+.bg-layanan{
+    background-color: #007BFF;
+}
+
+.bg-trip{
+    background-color: #7F9AC9;
+}

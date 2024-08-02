@@ -15,9 +15,19 @@ class TransTrip extends Migration
     {
         Schema::create('Trans_Trip', function(Blueprint $trip){
             $trip->id();
-            $trip->string('judul_halaman');
-            $trip->string('no_wa');
-            $trip->date('jadwal_trip');
+            $trip->string('nama_trip');
+            $trip->string('kota_tujuan');
+            $trip->text('Destinasi_wisata');
+            $trip->text('titik_pertemuan');
+            $trip->date('tanggal_berangkat');
+            $trip->date('tanggal_pulang');
+            $trip->string('kendaraan');
+            $trip->string('harga_dewasa');
+            $trip->string('harga_anak');
+            $trip->string('tempat_inap');
+            $trip->text('fasilitas');
+            $trip->text('syara_ketentuan');
+            // $trip->timestamps();
         });
     }
 
